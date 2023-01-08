@@ -1,18 +1,31 @@
+let arr = [5,2,1,4, -5, 7, 3, 10, 0, -11, -1, -22, 22, 33];
+
+// loop through the array
 
 
-let sampleArray = [5, 4, 3, 2, 1, 9, 10, 55];
-
-let resultArray = [];
-
-for (let i = 0; i < sampleArray.length; i++){
-    for (j = 0 ; j < sampleArray.length; j++){
-        console.log(`${sampleArray[i]} < ${sampleArray[j]}` + '  is   ' + (sampleArray[i] < sampleArray[j]));
-        if (sampleArray[i] < sampleArray[j]){
-            resultArray.unshift(sampleArray[i]);
-            console.log(resultArray)
+for (let b = 0; b < arr.length; b++){
+    for (a =0; a < arr.length; a++){
+        if (arr[a] > arr[a+1]){
+            temp = arr[a+0];
+            arr[a+0] = arr[a+1];
+            arr[a+1] = temp;
         }
+        
     }
 }
+
+console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
