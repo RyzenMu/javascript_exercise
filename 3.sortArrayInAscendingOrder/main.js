@@ -20,4 +20,3 @@ let sort = array => {
 }
 
 
-console.log('hell')
